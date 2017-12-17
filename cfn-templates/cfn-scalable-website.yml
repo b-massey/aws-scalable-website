@@ -250,7 +250,7 @@ Resources:
         - !Ref PrivateSubnet2
       LaunchConfigurationName: !Ref TestWebsiteLaunchConfiguration
       MinSize: '1'
-      MaxSize: '2'
+      MaxSize: '5'
       Tags:
         - Key: Name
           Value: "TestWebsite-WebServer"
