@@ -1,0 +1,38 @@
+  [
+    {
+		"ParameterKey": "VpcId",
+		"ParameterValue": "vpc-462e3121"
+	},
+    {
+		"ParameterKey": "PrivateSubnet1",
+		"ParameterValue": "subnet-97f7f3f0"
+	},
+    {
+		"ParameterKey": "PrivateSubnet2",
+		"ParameterValue": "subnet-78bdb431" 
+	},
+	{
+		"ParameterKey":"PublicSubnet1", 
+		"ParameterValue":"subnet-60f6f207" 
+	},
+	{
+		"ParameterKey":"PublicSubnet2", 
+		"ParameterValue": "subnet-4fbab306" 
+	},	
+	{
+		"ParameterKey": "KeyPairName",
+		"ParameterValue": "MyEC2Keys-eu-west-1"
+	},	  
+	{
+		"ParameterKey":"InstanceType",
+		"ParameterValue": "t2.micro"
+	},
+	{
+		"ParameterKey":"WebsiteFilesS3Bucket",
+		"ParameterValue": "my-testwebsite-files"
+	},
+    {
+		"ParameterKey":"WebServerCapacity",
+		"ParameterValue": "1"
+	}
+  ]
