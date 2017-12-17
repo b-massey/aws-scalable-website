@@ -62,6 +62,6 @@ The CloudWatch Alarm 'TestWebsite ALB Healthy Host Count' monitors the healthy h
 
 ### Scaling
 
-* __At Stack Creation__ - The stack is configured to create one web instance at creation. To Change thi, update the paramter *WebServerCapacity* to new value (If more than 5 instances are required at launch time, change _MaxSize_ in the Auto Scaling configuration will need t be updated as well)
+* __At Stack Creation__ - The stack is configured to create one web instance at creation. To Change this, update the paramter *WebServerCapacity* to the desired value (If more than 5 instances are required at launch time, the _MaxSize_ in the Auto Scaling configuration must also be updated)
 * __Manually__ - Change the 'Desired', 'Min,. 'Max', parameters on the auto scaling group as appropriate
-* __By CPU Usage__ - the Cloud watch Alam 'CPUUsageAlarmForTestWebsiteALB' linked to auto scaling group is by default set to scale up, if an instance is running about 50% CPU. This can be modified at the stack creation or at runtime on AWS console
+* __By CPU Usage__ - the Cloud watch alarm 'CPUUsageAlarmForTestWebsiteALB' will scale up the number of instances when the CPU is above 50% for 5 minutes. This can be modified when the stack is created or at runtime through the AWS console
