@@ -69,6 +69,14 @@ Mappings:
       HVM64: ami-1a962263
     eu-west-2: 
       HVM64: ami-e7d6c983
+    us-west-1: 
+      HVM64: ami-a51f27c5
+    us-west-2: 
+      HVM64: ami-bf4193c7     
+    us-east-1: 
+      HVM64: ami-55ef662f
+    us-east-2: 
+      HVM64: ami-15e9c770         
 Resources:
   InstanceRootRole:
     Type: AWS::IAM::Role
