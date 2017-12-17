@@ -43,7 +43,7 @@ teststack-params.json: is the parameters file which contains the parameter value
 
 Go to root directory of repo and execute the following AWS CLI command to create CloudFormation stack for VPC.
 
-_Note_ The CFN template is configured to accept only T2 instance types, in regions eu-west-1,eu-west-2, us-west-1, us-east-2, us-east-1, and us-east-2.
+_Note The CFN template is configured to accept only T2 instance types, in regions eu-west-1,eu-west-2, us-west-1, us-east-2, us-east-1, and us-east-2._
 ```
 aws cloudformation create-stack --stack-name TestSite-MainStack --template-body file://cfn-templates/cfn-scalable-website.yml --parameters file://cfn-templates/teststack-params.json --capabilities CAPABILITY_IAM
 ```
